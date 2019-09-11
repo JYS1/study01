@@ -9,7 +9,7 @@ public class Test07 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int number = 0; 
-		int min = 9999999 , max = 0;
+		int min = 2147483647 , max = 0;
 		
 		for(int i = 1; i <= 10; i++) {
 			System.out.print("숫자를 입력하세요 ( " + i +" 번쨰 ) : ");

@@ -11,7 +11,7 @@ public class Test05 {
 		for (int i = 1; i < 10000; i++) {
 				if(i % 3 == 0 || i % 5 == 0) {
 						System.out.print(i);
-						System.out.print(',');
+						System.out.print(' ');
 						sum += i;
 						count++;
 						if(count % 10 == 0) {
@@ -20,7 +20,8 @@ public class Test05 {
 				}
 		}
 		System.out.println();
-		System.out.println("합계 " + sum);
+		System.out.println("갯수 : " + count);
+		System.out.println("합계 : " + sum);
 	}
 	
 }
