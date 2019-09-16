@@ -1,36 +1,69 @@
 import java.util.Scanner;
-
+// 인원수를 저장하는 배열 / 
 public class Test05 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int[] ary = new int[20];
-		int[] count = new int[10];
+		final int number = 20;
 		int score;
-		int a = 0,
-			b = 0,
-			c = 0;
+		int[] student = new int[number];
+		int[] ary = new int[10];
+		int a1 = 0,
+			a2 = 0,
+			a3 = 0,
+			a4 = 0,
+			a5 = 0,
+			a6 = 0,
+			a7 = 0,
+			a8 = 0,
+			a9 = 0,
+			a10 = 0;
 		
-		
-		for(int i = 0; i < ary.length; i++) {
-			System.out.print(i+1 + " 번째 학생 성적을 입력하세요 : ");
+		for(int i = 0; i <  student.length; i++) {
+			System.out.print(i+1 + " Input Score : " );
 			score = Integer.parseInt( sc.nextLine());
-			ary[i] = score;
+			student[i] = score;
 			
-				{switch((int)(ary[i]/10)) {
-				case 10:
-				case 9: count[i] = a++;
-				break;
-				case 8: count[i] = b++;
-				break;
-				}
+			if(score >= 0 && score < 10) {
+				a1++;
+			} else if (score >= 10 && score < 20) {
+				a2++;
+			} else if (score >= 20 && score < 30) {
+				a3++;
+			} else if (score >= 30 && score < 40) {
+				a4++;
+			} else if (score >= 40 && score < 50) {
+				a5++;
+			} else if (score >= 50 && score < 60) {
+				a6++;
+			} else if (score >= 60 && score < 70) {
+				a7++;
+			} else if (score >= 70 && score < 80) {
+				a8++;
+			} else if (score >= 80 && score < 90) {
+				a9++;
+			} else {
+				a10++;
 			}
 		}
-		for(int i = 0; i< ary.length - 10; i++) {
-			System.out.print(i * 10 + "~" + (i * 10 + 9) + " : "+ count[i] + " 명");
-			System.out.println();
-		}
-	}
 
+		ary[0] = a1;
+		ary[1] = a2;
+		ary[2] = a3;
+		ary[3] = a4;
+		ary[4] = a5;
+		ary[5] = a6;
+		ary[6] = a7;
+		ary[7] = a8;
+		ary[8] = a9;
+		ary[9] = a10;
+		
+		
+		
+		for(int i = 0; i < 9; i++) {
+			System.out.println(i + " ~ " + ((i*10)+9) + " : " + ary[i] + " 명");
+		}
+		System.out.println("90 ~ 100 : " + ary[9] + " 명");
+	}
 }
