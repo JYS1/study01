@@ -47,7 +47,7 @@ public class ProductUI {
 			
 			System.out.print(" 품목 이름을 입력하세요 (end 입력시 Stop) : ");
 			name = sc.nextLine();
-			products.appendProductInfo(new ProductInfo(name,price));
+			products.appendProductInfo(new ProductInfo(name,price)); // 변수 지정.
 		}
 	}
 	

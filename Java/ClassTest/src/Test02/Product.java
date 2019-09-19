@@ -15,11 +15,14 @@ public class Product {
 	
 	public void appnedProductSell(String name,int count) {
 		int amount = 0;
+		int j,k;
 		for(int i = 0; i < product.size(); i++) {
 			if(product.get(i).getName().equals(name)) {
 				product.get(i).setCount(count);
 				amount = 0;
-				amount = (product.get(i).getPrice() * product.get(i).getCount());
+				j = (product.get(i).getPrice());
+				k = (product.get(i).getCount());
+				amount = j * k;
 				product.get(i).setAmount(amount);
 			}
 		}
