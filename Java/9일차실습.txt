@@ -1,4 +1,5 @@
 9일차 실습문제
+NetworkScoreTableClient/NetworkScoreTableServer 참조
 
 1. 다음과 같이 동작하는 프로그램 작성
 

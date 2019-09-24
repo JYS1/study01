@@ -20,10 +20,17 @@ public class Server {
 		
 		String message;
 		String name;
-		int[] score;
+		String score1;
+		String score2;
+		String score3;
+		Integer number1;
+		Integer number2;
+		Integer number3;
+		int sum = 0;
 		double average;
 		int rank;
 		String garde;
+		final int MAX = 3;
 		
 		try {
 			server = new ServerSocket(9000);
@@ -45,7 +52,12 @@ public class Server {
 			while (( message = in.readLine()) !=null ) {
 				System.out.println(message + "번을 선택 하였습니다.");
 				
+							
+				
+				out.println("등록 완료.");
 			}
+			
+			
 		}catch ( IOException e ) {}
 	}
 

@@ -21,7 +21,9 @@ public class Client {
 		String message;
 		String messageReceive;
 		String name;
-		int score;
+		String score1;
+		String score2;
+		String score3;
 		
 		final int MAX_SUBJECT = 3;
 		
@@ -41,13 +43,14 @@ public class Client {
 				if(message.equals("0")) {
 					break;
 				} else if(message.equals("1")) {
-						System.out.print("이름을 입력 하세요 : ");
-						name = sc.nextLine();
-						for(int i = 0; i < MAX_SUBJECT; i++) {
-							System.out.print((i + 1) +" 번째 성적을 입력 하세요 : ");
-							score = Integer.parseInt(sc.nextLine());
-						}
-						
+						System.out.println("이름을 입력 하세요 : ");
+						name = sc.next();
+						System.out.println("1 번째 성적을 입력해 주세요.");
+						score1 = sc.next();
+						System.out.println("2 번째 성적을 입력해 주세요.");
+						score2 = sc.next();
+						System.out.println("3 번째 성적을 입력해 주세요.");
+						score3 = sc.next();
 				}else if(message.equals("2")) {
 					
 				}
